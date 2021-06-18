@@ -1,5 +1,6 @@
 /*===== GOOGLE FONTS =====*/
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
 /*===== VARIABLES CSS =====*/
 :root{
   --header-height: 3rem;
@@ -289,35 +290,39 @@ img{
   z-index: var(--z-back);
 }
 .skills__html{
-  width: 95%;
+  width: 99%;
 }
 .skills__css{
-  width: 85%;
+  width: 98.9%;
 }
 .skills__js{
-  width: 65%;
+  width: 95%;
 }
 .skills__ux{
-  width: 85%;
+  width: 80%;
 }
 .skills__img{
   border-radius: .5rem;
 }
 
-/* ===== WORK =====*/
-.work__container{
+/* ===== SUBJECTS =====*/
+
+div.a {
+  text-align: center;
+}
+.subjects__container{
   row-gap: 2rem;
 }
-.work__img{
+.subjects__img{
   box-shadow: 0 4px 25px rgba(14,36,49,.15);
   border-radius: .5rem;
   overflow: hidden;
 }
-.work__img img{
+.subjects__img img{
   transition: 1s;
   cursor: pointer;
 }
-.work__img img:hover{
+.subjects__img img:hover{
   transform: scale(1.1);
 }
 
@@ -426,7 +431,7 @@ img{
   .about__img img{
     width: 300px;
   }
-  .work__container{
+  .subjects__container{
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2,1fr);
     column-gap: 2rem;
@@ -448,3 +453,69 @@ img{
     right: 10%;
   }
 }
+
+
+/* ===// banner end */
+
+/* Download our App to get benefits! */
+#instaBenefits {
+  border-width: 0 2px 2px 2px;
+  border-style: solid;
+  border-color: #E9EBFF;
+  padding-bottom: 15px;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+  margin-bottom: 30px;
+}
+
+#instaBenefits .benefit.hide-xs-below {
+display: none;
+}
+
+#instaBenefits .col{
+  display: flex;
+}
+
+#instaBenefits .col:nth-of-type(2),
+#instaBenefits .col:nth-of-type(3),
+#instaBenefits .col:nth-of-type(4),
+#instaBenefits .col:nth-of-type(5) {
+  padding-right: 0px;
+}
+
+
+#instaBenefits .getBenefits .benefitsImgs {
+  width: 119px;
+  height: 119px;
+  background: linear-gradient(135deg, #6B73FF 0%, #000DFF 100%);
+  border-radius: 50%;
+  margin: auto;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#instaBenefits .getBenefits {
+  padding: 20px 10px;
+  border-radius: 24px;
+  text-align: center;
+}
+
+
+#instaBenefits .getBenefits p {
+  font-size: 14px;
+  margin: 0;
+}
+
+.benefitsImgs.fasterImg img{
+  position: relative; left: -15px;
+}
+
+.benefitsImgs.teachersImg img{
+  position: relative;
+  right: -15px;
+  top: -10px;
+}
+
+/* ===// Download our App end */
